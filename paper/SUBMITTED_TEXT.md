@@ -86,7 +86,7 @@ Verification is not a capability every model has. We defined **separation = hit
 rate − false-affirmation rate** at matched payload sizes: the model is shown one
 file containing the evidence and one which does not, at 400, 1,200 and 3,600
 characters. A model naming whatever it is shown separates at zero. The result
-goes to `envelope_<model>.json`; the engine routes on this file, not on
+goes to `envelope_MODEL.json`; the engine routes on this file, not on
 assumptions.
 
 Payload size is a variable, not a detail. `granite4:3b` separates +0.94 at 400
@@ -115,7 +115,7 @@ but post-training permitting refusal: the ability to say *no*.
 ## 5. Structured output costs a small model its refusal
 
 To make a verifier's answers checkable without a second model, the agent was
-asked for `{"file": ..., "span": "<text verbatim>"}`, checked by literal
+asked for `{"file": ..., "span": "TEXT VERBATIM"}`, checked by literal
 containment. It failed instructively.
 
 >>> INSERT IMAGE: table4.png <<<
@@ -128,7 +128,8 @@ string**: in each case the next source character is a double quote. The model is
 emit an escaped quote inside a string, so it truncates.
 
 A prompt control adding four explicit rules — one complete line, 30+ characters,
-no joined lines, no placeholders — changed nothing: 6/16 in both arms, the same
+no joined lines, no placeholders — changed nothing: 6/16 verified in both arms by literal
+containment, 4/16 once the evidence clause is enforced as in §6, the same
 eight of ten failures, fragments byte-identical. Refusals dropped to 1/16.
 
 Constrained decoding is documented to degrade reasoning. What we observe is
@@ -312,15 +313,15 @@ capacity on syntax.
 Bays, P.M., Catalao, R.F.G. & Husain, M. (2009). The precision of visual working
 memory is set by allocation of a shared resource. *Journal of Vision* 9(10):7.
 
+Fan, H. (2026). Capacity, not format: rethinking structured reasoning failures.
+arXiv:2606.09410.
+
 Fievez, F. et al. (2022). Post-error slowing reflects the joint impact of
 adaptive and maladaptive processes. *Frontiers in Human Neuroscience* 16:864590.
 doi:10.3389/fnhum.2022.864590
 
 Foerster, A. et al. (2022). Binding error-induced control states. *Journal of
 Cognition*. doi:10.5334/joc.213
-
-Fan, H. (2026). Capacity, not format: rethinking structured reasoning failures.
-arXiv:2606.09410.
 
 Markowitz, E. et al. (2026). Google — The Gemma 4 Developer Agent Paper Track.
 Kaggle. kaggle.com/competitions/gemma-4-developer-agent-paper
