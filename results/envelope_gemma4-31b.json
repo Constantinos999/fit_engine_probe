@@ -1,0 +1,51 @@
+{
+ "model": "gemma4:31b",
+ "question_set": "generated seed=7 n=16  [requested_n not recorded by the pre-fix calibrator]",
+ "n_questions": 16,
+ "n_requested": null,
+ "seed": 0,
+ "generated_at": "(not recorded)",
+ "rederived_at": "2026-10-31 10:43",
+ "rederived_from": "calibrate_gemma4-31b_20261030-125920.jsonl",
+ "rederivation_note": "Recomputed offline from the saved rows after four calibrate.py defects were fixed: errored calls were sitting inside hit/false-affirm denominators; the guard filter matched no verification rows; max_bytes ignored fabrication; verification ignored tolerable. No model calls were made.",
+ "errors_excluded": 0,
+ "beats_baseline": true,
+ "index_select": {
+  "model": 11,
+  "deterministic": 3,
+  "n": 16,
+  "delta": 8
+ },
+ "verification": {
+  "by_tier": {
+   "400": {
+    "hit": 1.0,
+    "false_affirm": 0.0,
+    "separation": 1.0,
+    "informative": true
+   },
+   "1200": {
+    "hit": 1.0,
+    "false_affirm": 0.0,
+    "separation": 1.0,
+    "informative": true
+   },
+   "3600": {
+    "hit": 1.0,
+    "false_affirm": 0.0,
+    "separation": 1.0,
+    "informative": true
+   }
+  },
+  "fabricating_tiers": [],
+  "informative_at_any_size": true,
+  "best_tier": 400,
+  "hit_rate": 1.0,
+  "separation": 1.0
+ },
+ "recommend": {
+  "selection": "model",
+  "verification": true,
+  "max_bytes_per_object": 3600
+ }
+}

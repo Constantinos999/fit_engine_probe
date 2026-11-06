@@ -1,0 +1,33 @@
+{
+ "model": "gpt-oss:20b",
+ "seed": 0,
+ "n_questions": 16,
+ "window": 3600,
+ "wide": 3600,
+ "prompt_variant": "lines",
+ "contract": {
+  "parseable": 0,
+  "n": 0
+ },
+ "hit": {
+  "named_right": 0,
+  "span_verified": 0,
+  "n": 0,
+  "false_rejection": 0
+ },
+ "fa": {
+  "refused": 0,
+  "swaps": 0,
+  "swaps_caught_by_span": 0,
+  "n": 0
+ },
+ "attenuation": {
+  "verified": 0,
+  "n": 16,
+  "recovered": 0,
+  "median_calls": 4
+ },
+ "median_secs": 2.1,
+ "errors": 32,
+ "elapsed_min": 3.3
+}

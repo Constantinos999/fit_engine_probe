@@ -1,0 +1,16 @@
+{"model": "gemma4:31b", "qid": "g7_00", "kind": "hit", "shown": "notes.md", "answer": "notes.md", "named_shown": true, "secs": 0.6, "error": null}
+{"model": "gemma4:31b", "qid": "g7_00", "kind": "fa", "shown": "local_runner.py", "answer": "NONE", "named_shown": false, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_01", "kind": "hit", "shown": "notes.md", "answer": "notes.md", "named_shown": true, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_01", "kind": "fa", "shown": ".error_ledger.json", "answer": "NONE", "named_shown": false, "secs": 1.1, "error": null}
+{"model": "gemma4:31b", "qid": "g7_02", "kind": "hit", "shown": "local_runner.py", "answer": "local_runner.py", "named_shown": true, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_02", "kind": "fa", "shown": "run_test.py", "answer": "NONE", "named_shown": false, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_03", "kind": "hit", "shown": "local_runner.py", "answer": "local_runner.py", "named_shown": true, "secs": 0.6, "error": null}
+{"model": "gemma4:31b", "qid": "g7_03", "kind": "fa", "shown": ".ai_heuristics.md", "answer": "NONE", "named_shown": false, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_04", "kind": "hit", "shown": "subsystem_daemon.py", "answer": "subsystem_daemon.py", "named_shown": true, "secs": 0.6, "error": null}
+{"model": "gemma4:31b", "qid": "g7_04", "kind": "fa", "shown": ".core_dump.json", "answer": "NONE", "named_shown": false, "secs": 0.6, "error": null}
+{"model": "gemma4:31b", "qid": "g7_05", "kind": "hit", "shown": "fit_engine.py", "answer": "fit_engine.py", "named_shown": true, "secs": 0.6, "error": null}
+{"model": "gemma4:31b", "qid": "g7_05", "kind": "fa", "shown": ".core_dump.json", "answer": "NONE", "named_shown": false, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_06", "kind": "hit", "shown": "subsystem_daemon.py", "answer": "subsystem_daemon.py", "named_shown": true, "secs": 0.6, "error": null}
+{"model": "gemma4:31b", "qid": "g7_06", "kind": "fa", "shown": "local_runner.py", "answer": "NONE", "named_shown": false, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_07", "kind": "hit", "shown": "fit_engine.py", "answer": "fit_engine.py", "named_shown": true, "secs": 0.5, "error": null}
+{"model": "gemma4:31b", "qid": "g7_07", "kind": "fa", "shown": ".ai_heuristics.md", "answer": "NONE", "named_shown": false, "secs": 0.5, "error": null}

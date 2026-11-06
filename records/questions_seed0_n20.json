@@ -1,0 +1,146 @@
+[
+ {
+  "id": "g0_00",
+  "tok": "Failed",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 2662,
+  "q": "Which file contains a line reading `print(f\"\\n[Error] ____ to connect to Ollama server: {e}\")` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_01",
+  "tok": "Investigate",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 3034,
+  "q": "Which file contains a line reading `* ____ the logs for error messages or unexpected results.` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_02",
+  "tok": "between",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 4153,
+  "q": "Which file contains a line reading `* **Unintended Interactions:**  Interactions ____ different modules must be carefully reviewed to avo` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_03",
+  "tok": "isolated",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 3935,
+  "q": "Which file contains a line reading `* **Modularity:** The script analysis and execution should be ____ to prevent unintended or unantici` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_04",
+  "tok": "expectations",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 4319,
+  "q": "Which file contains a line reading `* **Control Flow:** Ensure that the code flow follows logical ____ and does not introduce unexpe` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_05",
+  "tok": "phases",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 1117,
+  "q": "Which file contains a line reading `You must execute and display the following four sequential ____ before providing your final output:` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_06",
+  "tok": "letter",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 1868,
+  "q": "Which file contains a line reading `# Use rsplit from the right to preserve the Windows drive ____ colon (e.g., C:)` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_07",
+  "tok": "Staging",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 2910,
+  "q": "Which file contains a line reading `print(f\"[*] Polling interval: {poll_interval}s (____ excluded)\")` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_08",
+  "tok": "background",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 2741,
+  "q": "Which file contains a line reading `print(\"[!] Ensure the Ollama ____ service is running.\")` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_09",
+  "tok": "generate",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 2175,
+  "q": "Which file contains a line reading `\"http://localhost:11434/api/____\",` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_10",
+  "tok": "Synchronized",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 2666,
+  "q": "Which file contains a line reading `print(f\"[*] [Daemon ____] Updated payload -> {PAYLOAD_PATH}\")` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_11",
+  "tok": "indexing",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 3276,
+  "q": "Which file contains a line reading `print(f\"\\n[!] Workspace mutation detected at {time.strftime('%Y-%m-%d %H:%M:%S')}. Re-____ signature...\")` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_12",
+  "tok": "Increased",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 4657,
+  "q": "Which file contains a line reading `for item in bound_context[\"bound_code\"][:4]:  # ____ limit for full tool visibility` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_13",
+  "tok": "Expanded",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 2743,
+  "q": "Which file contains a line reading `\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # ____ snippet window for deep inspection` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_14",
+  "tok": "inspection",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 2776,
+  "q": "Which file contains a line reading `\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # Expanded snippet window for deep ____` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g0_15",
+  "tok": "window",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 2760,
+  "q": "Which file contains a line reading `\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # Expanded snippet ____ for deep inspection` , where ____ is a single identifier?"
+ }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "model": "qwen2.5-coder-3b",
+    "variant": "lines",
+    "file": "attenuate_qwen2.5-coder-3b_lines.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 16,
+      "citation_verified": 16,
+      "refused": 0,
+      "errors": 0,
+      "rate": 1.0
+    },
+    "fa": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 8,
+      "errors": 0,
+      "rate": 0.0
+    },
+    "errors": 0,
+    "void": false,
+    "effective_false_affirm": 0.0,
+    "separation": 1.0
+  },
+  {
+    "model": "granite4-3b",
+    "variant": "lines",
+    "file": "attenuate_granite4-3b_lines.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 16,
+      "citation_verified": 15,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.938
+    },
+    "fa": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.0
+    },
+    "errors": 0,
+    "void": false,
+    "effective_false_affirm": 0.0,
+    "separation": 0.938
+  },
+  {
+    "model": "gemma3-1b",
+    "variant": "lines",
+    "file": "attenuate_gemma3-1b_lines.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 16,
+      "citation_verified": 11,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.688
+    },
+    "fa": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.0
+    },
+    "errors": 0,
+    "void": false,
+    "effective_false_affirm": 0.0,
+    "separation": 0.688
+  },
+  {
+    "model": "qwen3-1.7b",
+    "variant": "lines",
+    "file": "attenuate_qwen3-1.7b_lines.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 6,
+      "citation_verified": 6,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.375
+    },
+    "fa": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 2,
+      "errors": 0,
+      "rate": 0.0
+    },
+    "errors": 0,
+    "void": false,
+    "effective_false_affirm": 0.0,
+    "separation": 0.375
+  },
+  {
+    "model": "granite4-3b",
+    "variant": "strict",
+    "file": "attenuate_granite4-3b.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 16,
+      "citation_verified": 4,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.25
+    },
+    "fa": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 2,
+      "errors": 0,
+      "rate": 0.0
+    },
+    "errors": 0,
+    "void": false,
+    "effective_false_affirm": 0.0,
+    "separation": 0.25
+  },
+  {
+    "model": "granite4-3b",
+    "variant": "minlen",
+    "file": "attenuate_granite4-3b_minlen.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 16,
+      "citation_verified": 4,
+      "refused": 0,
+      "errors": 0,
+      "rate": 0.25
+    },
+    "fa": {
+      "n": 16,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 1,
+      "errors": 0,
+      "rate": 0.0
+    },
+    "errors": 0,
+    "void": false,
+    "effective_false_affirm": 0.0,
+    "separation": 0.25
+  },
+  {
+    "model": "gemma4-31b",
+    "variant": "lines",
+    "file": "attenuate_gemma4-31b_lines.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 0,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 0,
+      "errors": 16,
+      "rate": 0.0
+    },
+    "fa": {
+      "n": 0,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 0,
+      "errors": 16,
+      "rate": 0.0
+    },
+    "errors": 32,
+    "void": true,
+    "effective_false_affirm": 0.0,
+    "separation": 0.0
+  },
+  {
+    "model": "gpt-oss-20b",
+    "variant": "lines",
+    "file": "attenuate_gpt-oss-20b_lines.jsonl",
+    "n_rows": 48,
+    "hit": {
+      "n": 0,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 0,
+      "errors": 16,
+      "rate": 0.0
+    },
+    "fa": {
+      "n": 0,
+      "n_attempted": 16,
+      "named_right": 0,
+      "citation_verified": 0,
+      "refused": 0,
+      "errors": 16,
+      "rate": 0.0
+    },
+    "errors": 32,
+    "void": true,
+    "effective_false_affirm": 0.0,
+    "separation": 0.0
+  }
+]

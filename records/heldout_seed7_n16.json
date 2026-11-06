@@ -1,0 +1,146 @@
+[
+ {
+  "id": "g7_00",
+  "tok": "Friction",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 1934,
+  "q": "Which file contains a line reading `3. **____ Points:**` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_01",
+  "tok": "Documentation",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 5678,
+  "q": "Which file contains a line reading `5. **____:**` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_02",
+  "tok": "implements",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 6804,
+  "q": "Which file contains a line reading `* **`local_runner.py`**:  Runs local inference and ____ the `run_local_inference` function` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_03",
+  "tok": "necessary",
+  "home": [
+   "notes.md"
+  ],
+  "offset": 5077,
+  "q": "Which file contains a line reading `*  If ____, implement changes to the simulation script or the pipeline code based on the analysis f` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_04",
+  "tok": "visibility",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 4687,
+  "q": "Which file contains a line reading `for item in bound_context[\"bound_code\"][:4]:  # Increased limit for full tool ____` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_05",
+  "tok": "letter",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 1868,
+  "q": "Which file contains a line reading `# Use rsplit from the right to preserve the Windows drive ____ colon (e.g., C:)` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_06",
+  "tok": "window",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 2760,
+  "q": "Which file contains a line reading `\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # Expanded snippet ____ for deep inspection` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_07",
+  "tok": "sequential",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 1106,
+  "q": "Which file contains a line reading `You must execute and display the following four ____ phases before providing your final output:` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_08",
+  "tok": "preattentively",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 871,
+  "q": "Which file contains a line reading `Below is the ____ extracted and bound memory context from the local workspace:` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_09",
+  "tok": "OSError",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 1096,
+  "q": "Which file contains a line reading `except ____:` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_10",
+  "tok": "background",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 2741,
+  "q": "Which file contains a line reading `print(\"[!] Ensure the Ollama ____ service is running.\")` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_11",
+  "tok": "preserve",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 1841,
+  "q": "Which file contains a line reading `# Use rsplit from the right to ____ the Windows drive letter colon (e.g., C:)` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_12",
+  "tok": "getsize",
+  "home": [
+   "subsystem_daemon.py"
+  ],
+  "offset": 994,
+  "q": "Which file contains a line reading `size = os.path.____(full_path)` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_13",
+  "tok": "display",
+  "home": [
+   "local_runner.py"
+  ],
+  "offset": 1079,
+  "q": "Which file contains a line reading `You must execute and ____ the following four sequential phases before providing your final output:` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_14",
+  "tok": "Purpose",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 4833,
+  "q": "Which file contains a line reading `payload += f\"  * **Snippet / ____**: `{item['snippet']}...`\\n\"` , where ____ is a single identifier?"
+ },
+ {
+  "id": "g7_15",
+  "tok": "deeper",
+  "home": [
+   "fit_engine.py"
+  ],
+  "offset": 2174,
+  "q": "Which file contains a line reading `# 1. Bind matching source code & scripts (Capturing ____ functional context)` , where ____ is a single identifier?"
+ }
+]

@@ -1,0 +1,338 @@
+[
+ {
+  "arm": "hit",
+  "qid": "g0_00",
+  "home": "local_runner.py",
+  "file": "local_runner.py",
+  "span": "print(f\"\n[Error] Failed to connect to Ollama server: {e}\")",
+  "named_right": true,
+  "exists": true,
+  "span_ok": false,
+  "why": "span not found in the named file"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_00",
+  "home": "fit_engine.py.old.txt",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_01",
+  "home": "notes.md",
+  "file": "notes.md",
+  "span": "* Investigate the logs for error messages or unexpected resu",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_01",
+  "home": "fit_engine.py.old.txt",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_02",
+  "home": "notes.md",
+  "file": "notes.md",
+  "span": "* **Unintended Interactions:**  Interactions between differe",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_02",
+  "home": ".error_ledger.json",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_03",
+  "home": "notes.md",
+  "file": "notes.md",
+  "span": "* **Modularity:** The script analysis and execution should b",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_03",
+  "home": "fit_engine.py",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_04",
+  "home": "notes.md",
+  "file": "notes.md",
+  "span": "* **Control Flow:** Ensure that the code flow follows logica",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_04",
+  "home": ".error_ledger.json",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_05",
+  "home": "local_runner.py",
+  "file": "local_runner.py",
+  "span": "You must execute and display the following four sequential p",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_05",
+  "home": "fit_engine.py",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_06",
+  "home": "subsystem_daemon.py",
+  "file": "subsystem_daemon.py",
+  "span": "# Use rsplit from the right to preserve the Windows drive le",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_06",
+  "home": ".error_ledger.json",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_07",
+  "home": "subsystem_daemon.py",
+  "file": "subsystem_daemon.py",
+  "span": "print(f\"[*] Polling interval: {poll_interval}s (Staging excl",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_07",
+  "home": ".error_ledger.json",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_08",
+  "home": "local_runner.py",
+  "file": "local_runner.py",
+  "span": "print(\"[!] Ensure the Ollama background service is running.\"",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_08",
+  "home": ".core_dump.json",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_09",
+  "home": "local_runner.py",
+  "file": "local_runner.py",
+  "span": "\"http://localhost:11434/api/generate\",",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_09",
+  "home": "fit_engine.py",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_10",
+  "home": "subsystem_daemon.py",
+  "file": "subsystem_daemon.py",
+  "span": "print(f\"[*] [Daemon Synchronized] Updated payload -> {PAYLOA",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_10",
+  "home": "fit_engine.py.old.txt",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_11",
+  "home": "subsystem_daemon.py",
+  "file": "subsystem_daemon.py",
+  "span": "print(f\"\\n[!] Workspace mutation detected at {time.strftime(",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_11",
+  "home": ".ai_heuristics.md",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_12",
+  "home": "fit_engine.py",
+  "file": "fit_engine.py",
+  "span": "for item in bound_context[\"bound_code\"][:4]:  # Increased li",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_12",
+  "home": "run_test.py",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_13",
+  "home": "fit_engine.py",
+  "file": "fit_engine.py",
+  "span": "\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # Expan",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_13",
+  "home": ".error_ledger.json",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_14",
+  "home": "fit_engine.py",
+  "file": "fit_engine.py",
+  "span": "\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # Expan",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_14",
+  "home": ".ai_heuristics.md",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ },
+ {
+  "arm": "hit",
+  "qid": "g0_15",
+  "home": "fit_engine.py",
+  "file": "fit_engine.py",
+  "span": "\"snippet\": item[\"content\"][:800].replace('\\n', ' ')  # Expan",
+  "named_right": true,
+  "exists": true,
+  "span_ok": true,
+  "why": "span verified"
+ },
+ {
+  "arm": "fa",
+  "qid": "g0_15",
+  "home": "local_runner.py",
+  "file": "NONE",
+  "span": "",
+  "refused": true,
+  "span_ok": true,
+  "why": "refusal"
+ }
+]

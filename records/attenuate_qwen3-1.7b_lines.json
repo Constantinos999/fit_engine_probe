@@ -1,0 +1,33 @@
+{
+ "model": "qwen3:1.7b",
+ "seed": 0,
+ "n_questions": 16,
+ "window": 1200,
+ "wide": 3600,
+ "prompt_variant": "lines",
+ "contract": {
+  "parseable": 6,
+  "n": 16
+ },
+ "hit": {
+  "named_right": 6,
+  "span_verified": 6,
+  "n": 16,
+  "false_rejection": 0
+ },
+ "fa": {
+  "refused": 2,
+  "swaps": 1,
+  "swaps_caught_by_span": 1,
+  "n": 16
+ },
+ "attenuation": {
+  "verified": 13,
+  "n": 16,
+  "recovered": 3,
+  "median_calls": 1
+ },
+ "median_secs": 44.4,
+ "errors": 0,
+ "elapsed_min": 45.1
+}

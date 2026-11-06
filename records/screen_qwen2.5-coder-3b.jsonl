@@ -1,0 +1,16 @@
+{"model": "qwen2.5-coder:3b", "qid": "g7_00", "kind": "hit", "shown": "notes.md", "answer": "notes.md", "named_shown": true, "secs": 23.8, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_00", "kind": "fa", "shown": "local_runner.py", "answer": "local_runner.py", "named_shown": true, "secs": 15.0, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_01", "kind": "hit", "shown": "notes.md", "answer": "subsystem_daemon.py", "named_shown": false, "secs": 15.3, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_01", "kind": "fa", "shown": ".error_ledger.json", "answer": "NONE", "named_shown": false, "secs": 10.8, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_02", "kind": "hit", "shown": "local_runner.py", "answer": "local_runner.py", "named_shown": true, "secs": 14.6, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_02", "kind": "fa", "shown": "run_test.py", "answer": "NONE", "named_shown": false, "secs": 12.3, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_03", "kind": "hit", "shown": "local_runner.py", "answer": "local_runner.py", "named_shown": true, "secs": 12.7, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_03", "kind": "fa", "shown": ".ai_heuristics.md", "answer": "NONE", "named_shown": false, "secs": 9.6, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_04", "kind": "hit", "shown": "subsystem_daemon.py", "answer": "subsystem_daemon.py", "named_shown": true, "secs": 16.7, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_04", "kind": "fa", "shown": ".core_dump.json", "answer": "core_dump.json", "named_shown": true, "secs": 11.8, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_05", "kind": "hit", "shown": "fit_engine.py", "answer": "fit_engine.py", "named_shown": true, "secs": 15.3, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_05", "kind": "fa", "shown": ".core_dump.json", "answer": "core_dump.json", "named_shown": true, "secs": 7.1, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_06", "kind": "hit", "shown": "subsystem_daemon.py", "answer": "subsystem_daemon.py", "named_shown": true, "secs": 15.7, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_06", "kind": "fa", "shown": "local_runner.py", "answer": "local_runner.py", "named_shown": true, "secs": 6.7, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_07", "kind": "hit", "shown": "fit_engine.py", "answer": "fit_engine.py", "named_shown": true, "secs": 13.3, "error": null}
+{"model": "qwen2.5-coder:3b", "qid": "g7_07", "kind": "fa", "shown": ".ai_heuristics.md", "answer": "NONE", "named_shown": false, "secs": 4.6, "error": null}

@@ -1,0 +1,56 @@
+{
+  "model": "granite4:3b",
+  "seed": 0,
+  "n_questions": 16,
+  "window": 1200,
+  "wide": 3600,
+  "prompt_variant": "lines",
+  "contract": {
+    "parseable": 16,
+    "n": 16
+  },
+  "hit": {
+    "named_right": 16,
+    "span_verified": 16,
+    "n": 16,
+    "false_rejection": 0
+  },
+  "fa": {
+    "refused": 0,
+    "swaps": 16,
+    "swaps_caught_by_span": 0,
+    "n": 16
+  },
+  "attenuation": {
+    "verified": 0,
+    "n": 16,
+    "recovered": 0,
+    "median_calls": 4
+  },
+  "median_secs": 16.6,
+  "errors": 0,
+  "elapsed_min": 28.9,
+  "rescored_with_evidence": {
+    "note": "offline re-score of the same raw jsonl with check_lines evidence= supplied (D9). No new model calls.",
+    "hit": {
+      "named_right": 16,
+      "citation_verified": 15,
+      "n": 16,
+      "rejected_right_file_wrong_line": 1,
+      "detail": "g0_10 cited subsystem_daemon.py:69; the token 'Synchronized' is at line 62"
+    },
+    "fa": {
+      "swaps": 16,
+      "refused": 0,
+      "caught_by_evidence_check": 16,
+      "effective_false_affirm": 0.0,
+      "n": 16
+    },
+    "separation": 0.938,
+    "compare_span_contract": {
+      "citation_verified": 6,
+      "swaps_caught": 7,
+      "n": 16
+    }
+  }
+}

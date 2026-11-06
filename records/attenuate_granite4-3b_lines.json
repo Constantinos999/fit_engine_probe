@@ -1,0 +1,33 @@
+{
+ "model": "granite4:3b",
+ "seed": 0,
+ "n_questions": 16,
+ "window": 1200,
+ "wide": 3600,
+ "prompt_variant": "lines",
+ "contract": {
+  "parseable": 16,
+  "n": 16
+ },
+ "hit": {
+  "named_right": 16,
+  "span_verified": 15,
+  "n": 16,
+  "false_rejection": 1
+ },
+ "fa": {
+  "refused": 0,
+  "swaps": 16,
+  "swaps_caught_by_span": 16,
+  "n": 16
+ },
+ "attenuation": {
+  "verified": 16,
+  "n": 16,
+  "recovered": 1,
+  "median_calls": 1
+ },
+ "median_secs": 17.1,
+ "errors": 0,
+ "elapsed_min": 18.0
+}
