@@ -283,8 +283,8 @@ as a model limitation — would not have been found any other way.
 
 # Part 4 - CORRECTION: the "fabrication" was not invention
 
-31 October 2026. Found while reading `C:\.fit_engine_AI_Plan\Claude_fit_engine_mod.docx`,
-a design note that names `staging/memory_inject.md` as the FIT subsystem's payload
+31 October 2026. Found while reading one of the project's design notes,
+which names `staging/memory_inject.md` as the FIT subsystem's payload
 file. Verified immediately afterwards.
 
 ## What was claimed

@@ -36,9 +36,9 @@ And every one of those 8 dissolves on inspection. They are two distinct strings:
 - `memory_inject.md` x6 - exists at `staging/memory_inject.md`, referenced in
   six of the nine indexed corpus files, excluded from the index by
   `read_corpus()`.
-- `motif_specificity_test.py` x2 - exists at
-  `Project Tracker Logs\_TOOLS\motif_specificity_test.py`, and is named
-  explicitly inside `notes.md`, one of the nine files the model was shown.
+- `motif_specificity_test.py` x2 - a real file in the author's wider work tree,
+  outside the indexed corpus, and named explicitly inside `notes.md`, one of the
+  nine files the model was shown.
 
 **Genuine fabrication across 1,754 classified outcomes: zero.**
 Every error this project has ever recorded is a misattribution of a real file.
