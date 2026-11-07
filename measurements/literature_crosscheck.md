@@ -77,3 +77,20 @@ for structured honesty, and no contract change will rescue it.
 
 We have asserted the first and not tested it. The paper title in section 1 is a
 direct warning that the second is live.
+
+## 5. Resolved — the Fan paper was fetched and read
+
+7 November 2026. arXiv:2606.09410 was retrieved from the arXiv API and its
+abstract read directly: Hengxin Fan, published 8 June 2026, *Capacity, Not
+Format: Rethinking Structured Reasoning Failures*. Every figure cited in the
+paper's section 11 appears verbatim in the abstract — Sonnet 88.7±4.0% JSON
+against 89.3±1.7% CoT on MATH-Hard, GPT-4o-mini −28.0pp with extended budgets
+eliminating truncation, four models across five benchmarks, the penalty scaling
+with schema complexity (McNemar p < 0.0001), and the delayed-structure remedy,
+reason freely then format. The citation is safe to quote.
+
+Section 1 above still warns these numbers could not be verified. It was correct
+when written and is now superseded. The warning is left in place rather than
+deleted, because a file corrected in silence reads to a later session as if it
+had always been right — but note the cost: two separate sessions have re-fetched
+this paper after reading section 1 and raising a false alarm.
