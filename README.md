@@ -158,6 +158,39 @@ the same failure mode, caught once more during packaging.
 
 ---
 
+## Amendments after submission — 7 November 2026
+
+Three changes were made after the writeup was submitted, recorded here rather
+than applied quietly. A correction nobody can see reads to a later reader as
+though the file had always been right, which is the failure this project is
+about.
+
+**Integrity fix — `harness/refresh_cards.py`.** The script printed *"this script
+will not edit a card a human wrote"* and then copied the two hand-written
+continuity cards over the canonical copies, silently reverting any correction
+made there. Its audit read the source copy, so it never checked the card a
+person actually edits. Two corrections were destroyed this way and recovered
+only because they were re-checked afterwards. Fixed: the hand-written cards are
+no longer published by the script, and the audit now reads the canonical copy.
+Adds `--archive <session folder>`, which files the outgoing state card under a
+SUPERSEDED header. No measurement depends on this script; no table or figure
+changes.
+
+**Paper, sections 2 and 10.** Section 2 described the framing's falsification
+condition as untested. It had in fact been run — a four-phase deliberation arm
+beside the direct one, 96 calls on `gemma3:1b` — and the attribution errors did
+not yield to deliberation, so the framing survived its own refutation test.
+Section 10 had reported the framing's two further predictions as both failing;
+it now separates them, because the load prediction fails and the deliberation
+prediction holds. The confound is stated with both: the deliberation arm also
+degraded output format.
+
+**Two file paths removed**, from `measurements/measurement_12_verification_floor.md`
+and `measurements/measurement_14_falsifiable_test.md`. Each named a location in
+the author's private work tree. The claims they support are unchanged.
+
+---
+
 ## Licence and citation
 
 Apache License 2.0 — see `LICENSE`.
