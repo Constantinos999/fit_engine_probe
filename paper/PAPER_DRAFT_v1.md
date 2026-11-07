@@ -73,9 +73,14 @@ Two consequences follow immediately. First, a deterministic existence check —
 would have reported 576 wrong answers with no indication 382 of them share a single cause.
 
 A swap is an **illusory conjunction** in a text corpus (§11): the fact is read
-correctly and bound to the wrong source. We record what would refute this — if
-extra deliberation repaired the errors they were never binding failures and the
-framing should go.
+correctly and bound to the wrong source. We state what would refute this — if
+extra deliberation repaired the errors, they were never binding failures and the
+framing should go. We ran the arm. A four-phase deliberation prompt on the 1B
+model left swaps at 6 of 16 on the bound payload, unchanged, and raised them
+across all three arms from 8 to 10 of 48. The errors did not yield to thinking
+harder. We hold the test weak rather than decisive, because the same arm also
+degraded output format — malformed replies rose from 2 to 6 of 16 — so part of its
+failure to help belongs to the scaffold, not to the model.
 
 ## 3. An architecture which survived its controls
 
@@ -310,12 +315,12 @@ for most runs, 16 per envelope, so one question is 6 percentage points. The
 orchestrating assistant was not measured: it read the corpus during analysis, so
 any score would reflect conversation memory, not the payload.
 
-The framing predicts attribution errors should rise with the number and
-similarity of retrieved items and resist deliberation. **Neither holds cleanly
-here.** Objects per call gave 1/16, 10/16 and 2/16 — not monotonic, and the
-advantage did not survive shuffling. Wrong answers also arrived *faster* than
-right ones. We claim the taxonomy transfers, and nothing about the load
-mechanism.
+The framing makes two further predictions: attribution errors should rise with
+the number and similarity of retrieved items, and should resist deliberation.
+**The first fails here.** Objects per call gave 1/16, 10/16 and 2/16 — not
+monotonic — and the advantage did not survive shuffling. Wrong answers also
+arrived *faster* than right ones. The second survives a weak test (§2). We claim
+the taxonomy transfers, and nothing about the load mechanism.
 
 Finally the offline claim is partial: retrieval and verification run locally at
 cloud-model separation, but the zero-misattribution routing result cost a remote
