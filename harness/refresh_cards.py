@@ -38,7 +38,7 @@ def run(script):
 
 def audit_start_here():
     """Check the numbers START_HERE.md quotes against the rebuilt matrix."""
-    sh = os.path.join(HERE, "START_HERE.md")
+    sh = os.path.join(CANONICAL, "START_HERE.md")   # the copy a person edits (D10)
     mx = os.path.join(HERE, "contract_matrix.json")
     if not (os.path.exists(sh) and os.path.exists(mx)):
         return ["START_HERE.md or contract_matrix.json missing - cannot audit"]
@@ -91,8 +91,10 @@ def audit_start_here():
 # them). So the cards have ONE home and this script writes it.
 CANONICAL = os.environ.get("FIT_TRACKER",
     os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "measurements"))
-CARDS = ["RUN_LEDGER.md", "contract_matrix.md", "PAPER_TRAIL.md",
-         "START_HERE.md", "FOUNDATIONS.md"]
+# DERIVED cards only. START_HERE.md and FOUNDATIONS.md are hand-written and live
+# at CANONICAL as the single copy - publishing them from HERE gave them a second
+# home and silently reverted every correction made at the root (defect D10).
+CARDS = ["RUN_LEDGER.md", "contract_matrix.md", "PAPER_TRAIL.md"]
 
 
 def publish():
@@ -107,7 +109,38 @@ def publish():
             print(f"  published  {c}")
 
 
+
+def archive(session_folder):
+    """Copy the current START_HERE.md into a session folder, stamped SUPERSEDED.
+
+    The current card is identified by PATH - always CANONICAL/START_HERE.md.
+    Archived copies are history and are headed so nobody quotes one as current.
+    Skipping this step costs a snapshot, never the thread.
+    """
+    import datetime
+    src_card = os.path.join(CANONICAL, "START_HERE.md")
+    dest_dir = os.path.join(CANONICAL, session_folder)
+    if not os.path.exists(src_card):
+        print(f"  [skip] {src_card} not present"); return
+    if not os.path.isdir(dest_dir):
+        print(f"  [skip] {dest_dir} is not a folder - create it first")
+        return
+    stamp = datetime.date.today().isoformat()
+    out = os.path.join(dest_dir, f"START_HERE_SUPERSEDED_{stamp}.md")
+    head = (f"> **SUPERSEDED {stamp}.** The state card as it stood at the close of this\n"
+            f"> session. The current card is always `START_HERE.md` at the tracker root.\n"
+            f"> Nothing below should be quoted as current.\n\n")
+    with open(src_card, encoding="utf-8") as f: body = f.read()
+    with open(out, "w", encoding="utf-8") as f: f.write(head + body)
+    print(f"  archived   {os.path.relpath(out, CANONICAL)}")
+
+
 def main():
+    import sys
+    if "--archive" in sys.argv:
+        print("== archiving the outgoing state card ==")
+        archive(sys.argv[sys.argv.index("--archive") + 1])
+        print()
     print("== rebuilding derived cards ==")
     for s in DERIVED:
         name, status, first = run(s)
