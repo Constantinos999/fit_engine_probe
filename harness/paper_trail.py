@@ -14,7 +14,7 @@ number. If the check and the disk disagree, the case is wrong and visible.
 Model-free. Reads only saved raw rows and the corpus.
 usage:  python paper_trail.py          -> PAPER_TRAIL.md
 """
-import os, sys, json, glob, time
+import os, re, sys, json, glob, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PKG = os.path.dirname(HERE)
@@ -87,6 +87,46 @@ def trace(r, q, corpus, contract):
                 truth=truth[:3], secs=r.get("secs"))
 
 
+def _public_blob(records_dir, questions):
+    """Everything a reader of the release can already read: the raw per-call
+    records, plus each question line with its blanked identifier restored.
+
+    corpus_fixture/REDACTION.md promises nothing outside this set is disclosed.
+    The trail has to honour the same promise or the two artifacts disagree."""
+    blob = []
+    try:
+        for f in os.listdir(records_dir):
+            if f.endswith((".json", ".jsonl")):
+                blob.append(open(os.path.join(records_dir, f), encoding="utf-8",
+                                 errors="ignore").read())
+    except Exception:
+        pass
+    for q in (questions or []):
+        if "____" in q.get("q", "") and q.get("tok"):
+            blob.append(q["q"].replace("____", q["tok"]))
+    return "\n".join(blob)
+
+
+def _norm(s):
+    s = s.replace("\\\\", "\\").replace("\\n", "\n").replace('\\"', '"')
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def redact_private(text, blob, blob_norm):
+    """Dot any fragment not already public, exactly as the fixture dots."""
+    out = []
+    for part in (text or "").split(" / "):
+        s = part.strip()
+        if not s:
+            out.append(part); continue
+        n = _norm(part)
+        if s in blob or (len(n) >= 12 and n in blob_norm):
+            out.append(part)
+        else:
+            out.append("".join(c if c == " " else "." for c in part))
+    return " / ".join(out)
+
+
 def main():
     if os.path.exists(os.path.join(CORPUS, "REDACTION.md")):
         raise SystemExit(
@@ -100,6 +140,9 @@ def main():
     sources = [("attenuate_granite4-3b_lines.jsonl", "lines"),
                ("attenuate_granite4-3b.jsonl", "strict")]
 
+    global _PUB, _PUBN
+    _PUB = _public_blob(RECORDS, list(qmap.values()))
+    _PUBN = _norm(_PUB)
     cases, seen = [], set()
     # deliberately spread across the failure taxonomy rather than taking the
     # first N - a paper trail of twenty correct answers teaches nothing
@@ -150,6 +193,7 @@ def main():
         out.append(f"- **file shown to the model**: `{t['shown']}`  ·  "
                    f"**home file**: `{t['home']}`")
         out.append(f"- **model answered**: `{t['said_file']}`  span `{t['span']}`")
+        t["cited"] = redact_private(t["cited"], _PUB, _PUBN)
         if t["cited"]:
             out.append(f"- **what those lines actually say**: `{t['cited'][:160]}`")
         out.append(f"- **engine check**: {'PASS' if t['check_ok'] else 'FAIL'} "
