@@ -58,7 +58,7 @@ is not in the ledger, its output is not on disk.
 ## Layout
 
 ```
-paper/            the submitted paper, the draft it was cut from, ten figures
+paper/            the submitted paper and its figures
 harness/          the measurement code (10 scripts, engine-free by construction)
 records/          34 raw per-call records + the frozen question manifest
 results/          scored envelopes and the contract x model matrix
@@ -202,6 +202,19 @@ are unchanged.
 **Three counts in this README corrected** — 34 raw run records rather than 35,
 and the `paper/` and `measurements/` layout lines now name every file they
 hold.
+
+**The paper's figures now render.** `paper/SUBMITTED_TEXT.md` carried nine
+`>>> INSERT IMAGE <<<` markers — notes written for pasting into the Kaggle
+editor, which does not resolve markdown image links. They now link into
+`paper/figures/`, and the page shows its seven tables and two figures. Wording
+and numbers are untouched.
+
+**`paper/` holds one file.** `PAPER_DRAFT_v1.md` was removed. It agreed with the
+submitted text to 99.4% on prose and carried no section the submitted text
+lacks; what it did carry was a title block holding the pre-shortening title.
+`SUBMITTED_TEXT.md` now opens with the submitted title, the subtitle and the
+author line. Two near-identical papers in one folder is the ambiguity this
+work is about.
 
 ---
 
