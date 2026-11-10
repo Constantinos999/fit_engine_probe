@@ -25,7 +25,7 @@ cd harness
 python score_contracts.py
 ```
 
-This re-scores all 35 raw run records from scratch and writes
+This re-scores all 34 raw run records from scratch and writes
 `results/contract_matrix.json` and `results/contract_matrix.md`. Expected output:
 
 | model | contract | citation verified | false affirm | separation |
@@ -58,11 +58,11 @@ is not in the ledger, its output is not on disk.
 ## Layout
 
 ```
-paper/            the submitted paper and its ten figures
+paper/            the submitted paper, the draft it was cut from, ten figures
 harness/          the measurement code (10 scripts, engine-free by construction)
 records/          34 raw per-call records + the frozen question manifest
 results/          scored envelopes and the contract x model matrix
-measurements/     five measurement write-ups and the provenance cards
+measurements/     five write-ups, the literature cross-check, the provenance cards
 corpus_fixture/   redacted corpus, sufficient to re-run every citation check
 ```
 
@@ -139,11 +139,12 @@ point. Median seconds per call: `gemma3:1b` 10.3, `qwen2.5-coder:3b` 15.4,
 
 ---
 
-## Two defects worth reading
+## Two harness errors worth reading
 
 The paper argues automated probes interrogate the scorer, so a defective scorer
 is invisible to them. Both defects below survived every probe and were found by
-hand-tracing cases.
+hand-tracing cases. Both are documented in full, with their fixes, in
+`measurements/measurement_16_lines_contract.md`.
 
 **D9** — the evidence clause read `q.get("token")` where the question key is
 `tok`, so it silently never ran. The first write-up reported 16/16 verified and
@@ -158,12 +159,14 @@ the same failure mode, caught once more during packaging.
 
 ---
 
-## Amendments after submission — 7 November 2026
+## Revision history
 
-Three changes were made after the writeup was submitted, recorded here rather
-than applied quietly. A correction nobody can see reads to a later reader as
-though the file had always been right, which is the failure this project is
-about.
+This repository was public before the paper was final. Changes made since it
+first went up are recorded here rather than applied quietly. A correction
+nobody can see reads to a later reader as though the file had always been
+right, which is the failure this project is about.
+
+### 7 November 2026
 
 **Integrity fix — `harness/refresh_cards.py`.** The script printed *"this script
 will not edit a card a human wrote"* and then copied the two hand-written
@@ -188,6 +191,17 @@ degraded output format.
 **Two file paths removed**, from `measurements/measurement_12_verification_floor.md`
 and `measurements/measurement_14_falsifiable_test.md`. Each named a location in
 the author's private work tree. The claims they support are unchanged.
+
+### 10 November 2026
+
+**Section 9 of the paper** now says both defects are in the harness rather than
+the engine, and names `measurements/measurement_16_lines_contract.md` as the
+file documenting each with its fix. The labels, the numbers and every figure
+are unchanged.
+
+**Three counts in this README corrected** — 34 raw run records rather than 35,
+and the `paper/` and `measurements/` layout lines now name every file they
+hold.
 
 ---
 
