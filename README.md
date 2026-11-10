@@ -203,6 +203,14 @@ are unchanged.
 and the `paper/` and `measurements/` layout lines now name every file they
 hold.
 
+**`measurements/PAPER_TRAIL.md` brought under the fixture's own redaction rule.**
+Six of its eighteen cases quoted corpus lines which are not recoverable from
+`records/`, contradicting the promise in `corpus_fixture/REDACTION.md` that
+nothing outside that set is disclosed. Eight fragments are now dotted exactly as
+the fixture dots them, and `harness/paper_trail.py` applies the same test at
+generation time, so the two files cannot drift apart again. The eighteen cases,
+their verdicts, their line numbers and every number in the paper are unchanged.
+
 **The paper's figures now render.** `paper/SUBMITTED_TEXT.md` carried nine
 `>>> INSERT IMAGE <<<` markers — notes written for pasting into the Kaggle
 editor, which does not resolve markdown image links. They now link into
