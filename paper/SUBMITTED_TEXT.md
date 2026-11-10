@@ -241,7 +241,7 @@ evidence surviving in a form someone else can check.
 
 ## 9. Provenance, and what we got wrong
 
-Two defects were found by hand-tracing, *after* the result was written up.
+Two defects were found by hand-tracing, *after* the result was written up. Both are in the harness, not the engine; `measurements/measurement_16_lines_contract.md` in the repository documents each in full, with its fix.
 
 **D9**: the scorer requested the evidence token with `q.get("token")` while the
 question dictionary emits `tok`. `get()` returned `None` every time, so the
