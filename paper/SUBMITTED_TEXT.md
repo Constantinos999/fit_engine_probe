@@ -1,3 +1,9 @@
+# Misbinding, not fabrication: attribution error in an offline developer agent
+
+### Why citation format, not model size, decides whether a small local agent can be trusted with a research record
+
+**Constantinos Eleftheriou**
+
 ## Abstract
 
 An agent working offline on consumer hardware must do more than fit in memory:
@@ -47,7 +53,7 @@ the wrong one, and a file which does not exist.
 Across **1,754 classified model outputs** — 15 runs, 5 models, 1B to 31B
 parameters:
 
->>> INSERT IMAGE: table1.png <<<
+![Table 1 — outcome decomposition across 1,754 classified calls](figures/table1.png)
 
 The eight apparent fabrications did not survive inspection: six named a file
 excluded from the index by a directory filter but referenced in six of the nine
@@ -75,7 +81,7 @@ If the dominant error is misbinding, the defence is verification against the
 source. We compared routing policies over 48 questions across three seeds,
 ranking deterministically and asking the model only to confirm:
 
->>> INSERT IMAGE: table2.png <<<
+![Table 2 — routing policies: answered, misattributions, calls per query](figures/table2.png)
 
 Per seed the misattribution column reads 4 → 0, 6 → 0, 5 → 0. The narrowness is the finding — **verification adds no answers.** It converts
 confident wrong answers into honest refusals: accuracy among answers given rises
@@ -100,14 +106,14 @@ characters, **+1.00 at 1,200** and +0.75 at 3,600, false affirmation rising
 text past it makes the model *less* able to tell right file from wrong — hence
 per-model `max_bytes_per_object`.
 
->>> INSERT IMAGE: fig1_verification_floor.png <<<
+![Figure 1](figures/fig1_verification_floor.png)
 
 **Figure 1.** Left: separation against window size; the shaded band is the
 usable-verifier region. `granite4:3b` is the smallest model entering it and the
 only local one; its fall at 3,600 characters comes from answering a real file
 outside the index, not invention. Right: selection accuracy.
 
->>> INSERT IMAGE: table3.png <<<
+![Table 3 — selection, separation and verifier status per model](figures/table3.png)
 
 Transport failures are excluded from every rate. A 20-line ranker is the floor
 at 4/16; only the two largest beat it decisively.
@@ -123,7 +129,7 @@ To make a verifier's answers checkable without a second model, the agent was
 asked for `{"file": ..., "span": "TEXT VERBATIM"}`, checked by literal
 containment. It failed instructively.
 
->>> INSERT IMAGE: table4.png <<<
+![Table 4 — bare filename against JSON span](figures/table4.png)
 
 The model verifying at +1.00 affirmed the wrong file 14/16 under a schema.
 
@@ -158,9 +164,9 @@ The same sixteen questions, the same corpus, temperature 0, three model families
 and three sizes. `citation verified` counts answers whose citation passes the
 engine's own deterministic check with the evidence clause enforced; `false affirm` is the same check applied to the wrong-file arm.
 
->>> INSERT IMAGE: table5.png <<<
+![Table 5 — the lines contract across four local models](figures/table5.png)
 
->>> INSERT IMAGE: fig2_contract_matrix.png <<<
+![Figure 2](figures/fig2_contract_matrix.png)
 
 **Figure 2.** Left: verified citations and false attributions under the
 line-number contract, four models, 16 questions each. Right: one model, three
@@ -189,7 +195,7 @@ One office desktop: **Intel Core i5-8500T** (6 cores, 35 W), **8 GB RAM**,
 **Intel UHD Graphics 630** integrated and unused — every number is CPU-only.
 Models were served locally by **Ollama** over `POST /api/generate`, default tags:
 
->>> INSERT IMAGE: table6.png <<<
+![Table 6 — model tags, digests and sizes](figures/table6.png)
 
 Every call used `temperature: 0`, `num_predict: 400`, `stream: false` and
 Ollama's `format` parameter carrying the contract schema — `{file, span}`, or
@@ -202,7 +208,7 @@ plan); every figure was computed by code from saved raw records.
 
 Median s/call, 48 calls each:
 
->>> INSERT IMAGE: table7.png <<<
+![Table 7 — median seconds per call, 48 calls each](figures/table7.png)
 
 `qwen3:1.7b` is slowest despite being second smallest because it emits reasoning
 tokens first — an output habit, not size. The matrix cost ninety minutes.
