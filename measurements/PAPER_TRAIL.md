@@ -1,6 +1,6 @@
 # Paper trail - 18 real cases, traced by hand
 
-Generated 2026-11-05 13:13 by `paper_trail.py` from saved
+Generated 2026-11-10 18:21 by `paper_trail.py` from saved
 raw rows. No model was called. Every case can be checked against the
 repository without running anything: the question, the model's answer, the
 engine's deterministic verdict, and the evidence's true location on disk.
@@ -18,7 +18,7 @@ mismatch, invisible to every automated probe - is what that cost.
 - **evidence token**: `Synchronized`
 - **file shown to the model**: `subsystem_daemon.py`  ·  **home file**: `subsystem_daemon.py`
 - **model answered**: `subsystem_daemon.py`  span `69-69`
-- **what those lines actually say**: `last_sig = None`
+- **what those lines actually say**: `........ . ....`
 - **engine check**: FAIL - cited lines do not contain the evidence
 - **the token really lives at**: `subsystem_daemon.py`:62 -> `print(f"[*] [Daemon Synchronized] Updated payload -> {PAYLOAD_PATH}")`
 
@@ -116,7 +116,7 @@ mismatch, invisible to every automated probe - is what that cost.
 - **evidence token**: `Investigate`
 - **file shown to the model**: `fit_engine.py.old.txt`  ·  **home file**: `notes.md`
 - **model answered**: `fit_engine.py.old.txt`  span `8-9`
-- **what those lines actually say**: `self.error_ledger_path = os.path.join(self.root, ".error_ledger.json") / self.heuristics_path = os.path.join(self.root, ".ai_heuristics.md")`
+- **what those lines actually say**: `...................... . ....................... ..................... / self.heuristics_path = os.path.join(self.root, ".ai_heuristics.md")`
 - **engine check**: FAIL - cited lines do not contain the evidence
 - **the token really lives at**: `notes.md`:55 -> `* Investigate the logs for error messages or unexpected results.`
 
@@ -126,7 +126,7 @@ mismatch, invisible to every automated probe - is what that cost.
 - **evidence token**: `between`
 - **file shown to the model**: `.error_ledger.json`  ·  **home file**: `notes.md`
 - **model answered**: `.error_ledger.json`  span `6-7`
-- **what those lines actually say**: `"trigger_event": "Initial test run simulation", / "post_mortem": {`
+- **what those lines actually say**: `................ ........ .... ... ............ / "post_mortem": {`
 - **engine check**: FAIL - cited lines do not contain the evidence
 - **the token really lives at**: `notes.md`:75 -> `* **Unintended Interactions:**  Interactions between different modules`
 
@@ -164,7 +164,7 @@ mismatch, invisible to every automated probe - is what that cost.
 - **evidence token**: `Failed`
 - **file shown to the model**: `local_runner.py`  ·  **home file**: `local_runner.py`
 - **model answered**: `local_runner.py`  span `58-60`
-- **what those lines actually say**: `print("="*60) / except Exception as e: / print(f"\n[Error] Failed to connect to Ollama server: {e}")`
+- **what those lines actually say**: `............. / except Exception as e: / print(f"\n[Error] Failed to connect to Ollama server: {e}")`
 - **engine check**: PASS - lines 58-60 verified
 - **the token really lives at**: `local_runner.py`:60 -> `print(f"\n[Error] Failed to connect to Ollama server: {e}")`
 
@@ -174,7 +174,7 @@ mismatch, invisible to every automated probe - is what that cost.
 - **evidence token**: `Investigate`
 - **file shown to the model**: `notes.md`  ·  **home file**: `notes.md`
 - **model answered**: `notes.md`  span `50-56`
-- **what those lines actually say**: `2. **Steps:** / * **Step 1: Identify and analyze errors in the SciPy simulation script:** / *  Review the simulation script's code for specific errors.`
+- **what those lines actually say**: `.. .......... / . ...... .. ........ ... ....... ...... .. ... ..... .......... ......... / .  ...... ... .......... ........ .... ... ........ .......`
 - **engine check**: PASS - lines 50-56 verified
 - **the token really lives at**: `notes.md`:55 -> `* Investigate the logs for error messages or unexpected results.`
 
@@ -184,7 +184,7 @@ mismatch, invisible to every automated probe - is what that cost.
 - **evidence token**: `between`
 - **file shown to the model**: `notes.md`  ·  **home file**: `notes.md`
 - **model answered**: `notes.md`  span `70-76`
-- **what those lines actually say**: `* **Modularity:** The script analysis and execution should be isolated to prevent unintended or unantici / pated modifications. / `
+- **what those lines actually say**: `* **Modularity:** The script analysis and execution should be isolated to prevent unintended or unantici / ..... .............. / `
 - **engine check**: PASS - lines 70-76 verified
 - **the token really lives at**: `notes.md`:75 -> `* **Unintended Interactions:**  Interactions between different modules`
 
