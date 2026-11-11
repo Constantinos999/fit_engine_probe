@@ -1,7 +1,11 @@
 # Measurement 14 - the predecessor's falsifiable test, run
 
 31 October 2026. No new model calls; computed over every row this project has
-saved (1,754 classified outcomes across 15 runs and 5 models).
+saved (1,754 classified outcomes across 12 runs and 5 models).
+
+*Corrected 11 November 2026 — this read "15 runs". That count included three
+16-call screen records, which carry no classification and are not among the
+1,754. The twelve records carrying a `cls` field sum to exactly the table below.*
 
 ## The test, as it was set
 
