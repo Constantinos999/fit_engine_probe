@@ -50,7 +50,7 @@ Catalao and Husain, 2009): **correct**, **swapped** to a non-target item, and
 **guessed**. For an agent's citations: correct attribution, a real file which is
 the wrong one, and a file which does not exist.
 
-Across **1,754 classified model outputs** — 15 runs, 5 models, 1B to 31B
+Across **1,754 classified model outputs** — 12 runs, 5 models, 1B to 31B
 parameters:
 
 ![Table 1 — outcome decomposition across 1,754 classified calls](figures/table1.png)
@@ -118,7 +118,7 @@ outside the index, not invention. Right: selection accuracy.
 Transport failures are excluded from every rate. A 20-line ranker is the floor
 at 4/16; only the two largest beat it decisively.
 
-**Parameter count does not order the table** — a 1.7B separates better than a
+**Parameter count does not order the table** — a 1.7B selects better than a
 3B, a 20B matches a 31B — and nor does latency. A 3B on an 8 GB desktop with no
 GPU reaches the separation of a 31B. What the capable models share is not scale
 but post-training permitting refusal: the ability to say *no*.
