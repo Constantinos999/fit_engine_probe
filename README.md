@@ -25,7 +25,7 @@ cd harness
 python score_contracts.py
 ```
 
-This re-scores all 34 raw run records from scratch and writes
+This re-scores the eight `attenuate_*.jsonl` run records from scratch and writes
 `results/contract_matrix.json` and `results/contract_matrix.md`. Expected output:
 
 | model | contract | citation verified | false affirm | separation |
@@ -223,6 +223,29 @@ lacks; what it did carry was a title block holding the pre-shortening title.
 `SUBMITTED_TEXT.md` now opens with the submitted title, the subtitle and the
 author line. Two near-identical papers in one folder is the ambiguity this
 work is about.
+
+### 11 November 2026
+
+**Paper, section 2 — "12 runs", not "15 runs".** The 1,754 classified outputs
+come from the twelve run records carrying a `cls` field: seven `calibrate_*`,
+two `chunked_*`, two `perobject_*` and `probe_results.jsonl`. The earlier figure
+of fifteen also counted the three 16-call `screen_*` records, which carry no
+classification and are not among the 1,754. Tallying `cls` across the twelve
+files returns Table 1 exactly — 1,178 / 382 / 87 / 59 / 40 / 8. No count, share
+or conclusion changes. The same correction is made, with a dated note, in
+`measurements/measurement_14_falsifiable_test.md`.
+
+**Paper, section 4 — "selects", not "separates".** The sentence read *"a 1.7B
+separates better than a 3B"*. That was true of an earlier 16-call screen of
+`qwen2.5-coder:3b` (+0.38, against +0.44 for `qwen3:1.7b`), reported in part 1
+of `measurements/measurement_12_verification_floor.md`. But the 3B in Table 3 is
+`granite4:3b`, which separates at +1.00, so the sentence contradicted the table
+beneath it. What Table 3 shows is the 1.7B *selecting* better than the 3B — 7/15
+against 5/16 — and the sentence now says so. No number changes.
+
+**This README, "Reproduce the headline result".** It said the scorer re-scores
+all 34 raw run records. It scores the eight `attenuate_*.jsonl` records behind
+the contract matrix, and the sentence now says eight.
 
 ---
 
